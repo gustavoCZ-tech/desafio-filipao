@@ -31,34 +31,33 @@ Bons estudos 😉
 
 let nomeHeroi = "gustavo";
 let xpHeroi = 5000;
-let classeHeroi = ""
+let classeHeroi 
 
 switch(xpHeroi){
   case xpHeroi <= 1000:
-    classeHeroi = ferro;
+    classeHeroi = "ferro";
     break
   case (xpHeroi > 1000) && (xpHeroi <= 2000):
-    classeHeroi = bronze;
+    classeHeroi = "bronze";
     break
   case (xpHeroi > 2000) && (xpHeroi <= 5000 ):
-    classeHeroi = prata;
+    classeHeroi = "prata";
     break
   case (xpHeroi > 5000) && (xpHeroi <=7000 ):
-    classeHeroi = ouro;
+    classeHeroi = "ouro";
     break
   case (xpHeroi > 7000) && (xpHeroi <=8000 ):
-    classeHeroi = platina;
+    classeHeroi = "platina";
     break
   case (xpHeroi > 8000) && (xpHeroi <=9000 ):
-    classeHeroi = ascendente;
+    classeHeroi = "ascendente";
     break
   case (xpHeroi > 9000) && (xpHeroi <=10000 ):
-    classeHeroi = imortal;
+    classeHeroi = "imortal";
     break
-  case (xpHeroi => 10000):
-    classeHeroi = radiante;
-    break
-  
-  console.log("O Herói de nome ", nomeHeroi," está no nivel de ", classeHeroi);
+  default:
+    classeHeroi = "radiante";
+    
+  }
+console.log("O Herói de nome "+ nomeHeroi +" está no nivel de "+ classeHeroi);
 
-}
