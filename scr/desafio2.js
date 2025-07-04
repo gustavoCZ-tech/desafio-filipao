@@ -1,39 +1,27 @@
-placarDeJogo(4,9)
 
-function alert("placar foi" + totalDePontos)
-
-function placarDeJogo(vitoria, derrotas){
-    let totalDePontos = vitoria - derrotas
-    return totalDePontos
+function placarDeJogo(vitorias, derrotas) {
+    return vitorias - derrotas;
 }
-// let nomeHeroi = "gustavo";
-// let xpHeroi = 5000;
-// let classeHeroi 
 
-// switch(xpHeroi){
-//   case xpHeroi <= 1000:
-//     classeHeroi = "ferro";
-//     break
-//   case (xpHeroi > 1000) && (xpHeroi <= 2000):
-//     classeHeroi = "bronze";
-//     break
-//   case (xpHeroi > 2000) && (xpHeroi <= 5000 ):
-//     classeHeroi = "prata";
-//     break
-//   case (xpHeroi > 5000) && (xpHeroi <=7000 ):
-//     classeHeroi = "ouro";
-//     break
-//   case (xpHeroi > 7000) && (xpHeroi <=8000 ):
-//     classeHeroi = "platina";
-//     break
-//   case (xpHeroi > 8000) && (xpHeroi <=9000 ):
-//     classeHeroi = "ascendente";
-//     break
-//   case (xpHeroi > 9000) && (xpHeroi <=10000 ):
-//     classeHeroi = "imortal";
-//     breako
-//   default:
-//     classeHeroi = "radiante";
-    
-//   }
-// console.log("O Herói de nome "+ nomeHeroi +" está no nivel de "+ classeHeroi);
+let nomeHeroi = "gustavo";
+let saldoVitorias = placarDeJogo(40, 90); 
+let nivelHeroi;
+
+if (saldoVitorias <= 10) {
+    nivelHeroi = "Ferro";
+} else if (saldoVitorias <= 20) {
+    nivelHeroi = "Bronze";
+} else if (saldoVitorias <= 50) {
+    nivelHeroi = "Prata";
+} else if (saldoVitorias <= 80) {
+    nivelHeroi = "Ouro";
+} else if (saldoVitorias <= 90) {
+    nivelHeroi = "Diamante";
+} else if (saldoVitorias <= 100) {
+    nivelHeroi = "Lendário";
+} else { 
+    nivelHeroi = "Imortal";
+}
+
+
+console.log("O Herói de nome " + nomeHeroi + " tem saldo de " + saldoVitorias + " e está no nível " + nivelHeroi);
